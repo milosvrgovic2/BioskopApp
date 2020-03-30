@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textViewVasaRezervacija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Vaša rezervacija"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDialogFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/film"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewVasaRezervacija"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVasaRezervacija" />
+
+    <TextView
+        android:id="@+id/textViewDialogProjekcija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/projekcija"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewDialogFilm"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogFilm" />
+
+    <TextView
+        android:id="@+id/textViewDialogSala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sala:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewDialogProjekcija"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogProjekcija" />
+
+    <TextView
+        android:id="@+id/textViewDialogDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Datum:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewDialogSala"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogSala" />
+
+    <TextView
+        android:id="@+id/textViewDialogSedista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sedišta:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewDialogDatum"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogDatum" />
+
+    <TextView
+        android:id="@+id/textViewDialogCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cena:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewDialogSedista"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogSedista" />
+
+    <TextView
+        android:id="@+id/textViewDialogInputFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDialogFilm"
+        app:layout_constraintStart_toEndOf="@+id/textViewDialogFilm" />
+
+    <TextView
+        android:id="@+id/textViewDialogInputProjekcija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDialogProjekcija"
+        app:layout_constraintStart_toEndOf="@+id/textViewDialogProjekcija" />
+
+    <TextView
+        android:id="@+id/textViewDialogInputSala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDialogSala"
+        app:layout_constraintStart_toEndOf="@+id/textViewDialogSala" />
+
+    <TextView
+        android:id="@+id/textViewDialogInputDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDialogDatum"
+        app:layout_constraintStart_toEndOf="@+id/textViewDialogDatum" />
+
+    <TextView
+        android:id="@+id/textViewDialogSedistaInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDialogSedista"
+        app:layout_constraintStart_toEndOf="@+id/textViewDialogSedista" />
+
+    <TextView
+        android:id="@+id/textViewDialogInputCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDialogCena"
+        app:layout_constraintStart_toEndOf="@+id/textViewDialogCena" />
+
+    <Button
+        android:id="@+id/buttonPotrvdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Potvrdi"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOdustani"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogCena"
+        android:background="@drawable/buttton_home"/>
+
+    <Button
+        android:id="@+id/buttonOdustani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odustani"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonPotrvdi"
+        app:layout_constraintTop_toTopOf="@+id/buttonPotrvdi"
+        android:background="@drawable/buttton_home"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bioskop</string>
+    <string name="film">Film:</string>
+    <string name="projekcija">Projekcija:</string>
+    <string name="potrvdi">Potvrdi</string>
+    <string name="odustani">Odustani</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBdMakz4QL-hEXDCE6Onddhc_krCfltRG0</string>
+</resources>

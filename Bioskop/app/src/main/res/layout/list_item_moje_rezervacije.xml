@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item_moje_rezervacije">
+
+    <TextView
+        android:id="@+id/textViewMojeRezFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMojeRezDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/textViewMojeRezFilm"
+        app:layout_constraintTop_toTopOf="@+id/textViewMojeRezFilm" />
+
+    <TextView
+        android:id="@+id/textViewMojeRezVreme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMojeRezDatum"
+        app:layout_constraintStart_toEndOf="@+id/textViewMojeRezDatum" />
+
+    <TextView
+        android:id="@+id/textViewMojeRezCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMojeRezVreme"
+        app:layout_constraintStart_toEndOf="@+id/textViewMojeRezVreme" />
+
+    <Button
+        android:id="@+id/buttonMojeRezOktazi"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Otkaži"
+        android:background="@drawable/buttton_home"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMojeRezCena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMojeRezCena" />
+
+    <TextView
+        android:id="@+id/textViewBioskop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/textViewMojeRezCena"
+        app:layout_constraintTop_toTopOf="@+id/textViewMojeRezCena" />
+</androidx.constraintlayout.widget.ConstraintLayout>

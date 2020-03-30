@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/buttonTopFilmovi"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttton_home"
+        android:text="top filmovi"
+        app:layout_constraintStart_toStartOf="@+id/buttonRepertoar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRepertoar" />
+
+    <Button
+        android:id="@+id/buttonTrejleri"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttton_home"
+        android:text="Trejleri"
+        app:layout_constraintStart_toStartOf="@+id/buttonTopFilmovi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTopFilmovi" />
+
+    <Button
+        android:id="@+id/buttonLokacija"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttton_home"
+        android:text="Bioskopi u blizini"
+        app:layout_constraintStart_toStartOf="@+id/buttonRepertoar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTrejleri" />
+
+    <Button
+        android:id="@+id/buttonRepertoar"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/buttton_home"
+        android:text="repertoar bioskopa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewPager"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

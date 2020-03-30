@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:id="@+id/login_fragment">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPrijavljivanje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Prijavljivanje" />
+
+        <EditText
+            android:id="@+id/etKorisnickoIme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textNoSuggestions"
+            android:hint="Korisničko ime"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"/>
+
+        <EditText
+            android:id="@+id/etLozinka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword|textNoSuggestions"
+            android:hint="Lozinka"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/login_button"
+            android:textColor="#ffffff"
+            android:text="Prijavi se" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:text="Registruj se" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
